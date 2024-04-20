@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Where are you?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="main-content">
+        <div class="latitude-longitude">
+            <label>
+                <input class="latitude" type="text" placeholder="Latitude">
+            </label>
+            <label>
+                <input class="longitude" type="text" placeholder="Longitude">
+            </label>
+        </div>
+
+        <button class="button search-button" type="button">Search</button>
+
+        <div class="data-area">
+            <div class="data street">
+                <span class="label">Street</span>
+                <span class="dash">-</span>
+                <span class="description des-street"></span>
+            </div>
+
+            <div class="data city">
+                <span class="label">City</span>
+                <span class="dash">-</span>
+                <span class="description des-city"></span>
+            </div>
+
+            <div class="data postal-code">
+                <span class="label">Postal Code</span>
+                <span class="dash">-</span>
+                <span class="description des-postal-code"></span>
+            </div>
+
+            <div class="data state">
+                <span class="label">State</span>
+                <span class="dash">-</span>
+                <span class="description des-state"></span>
+            </div>
+
+            <div class="data timezone">
+                <span class="label">Timezone</span>
+                <span class="dash">-</span>
+                <span class="description des-timezone"></span>
+            </div>
+
+            <div class="data country">
+                <span class="label">Country</span>
+                <span class="dash">-</span>
+                <span class="description des-country"></span>
+            </div>
+        </div>
+
+        <button class="button save-button" type="button">Save Coordinates</button>
+    </div>
+    <div class="saved-history">
+        <div class="index">
+            <p>Saved Coordinates</p>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

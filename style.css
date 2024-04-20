@@ -1,0 +1,112 @@
+.container {
+  display: flex;
+  flex-flow: row;
+}
+.container .main-content {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: 0 2rem;
+  width: 55rem;
+}
+.container .main-content .latitude-longitude {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  justify-content: space-between;
+  margin: 2rem 0;
+  color: #6B6B6B;
+}
+.container .main-content .latitude-longitude .latitude,
+.container .main-content .latitude-longitude .longitude {
+  padding: 1rem;
+  border: none;
+  background: #E5E5E5;
+  width: 23rem;
+  border-radius: 10px;
+}
+.container .main-content .button {
+  padding: 1rem;
+  border: none;
+  background: #278BFF;
+  color: white;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.container .main-content .button:hover, .container .main-content .button:active {
+  background: #007cff;
+}
+.container .main-content .data-area {
+  display: flex;
+  flex-flow: column;
+  background: #E5E5E5;
+  width: 100%;
+  margin: 2rem 0;
+  border-radius: 10px;
+}
+.container .main-content .data-area .data {
+  height: 3rem;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  padding: 0 2rem;
+}
+.container .main-content .data-area .data .label {
+  width: 10%;
+}
+.container .main-content .data-area .data .dash {
+  width: 20%;
+  text-align: center;
+}
+.container .main-content .data-area .data .description {
+  word-wrap: break-word;
+  width: 70%;
+  font-weight: bolder;
+}
+.container .main-content .data-area .street {
+  height: 5.5rem;
+}
+.container .saved-history {
+  display: flex;
+  flex-flow: column;
+  width: 30rem;
+  max-height: 35rem;
+  margin: 2rem 2rem 0 2rem;
+  background: #E5E5E5;
+  border-radius: 10px;
+  overflow-y: auto;
+}
+.container .saved-history .index {
+  text-align: center;
+  color: #6B6B6B;
+}
+.container .saved-history .entry {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background: #D9D9D9;
+  margin: 1rem;
+}
+.container .saved-history .entry .data {
+  margin: 1rem;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .saved-history .entry .data .lat,
+.container .saved-history .entry .data .long {
+  width: 12rem;
+}
+.container .saved-history .entry .note-taking {
+  margin: 0 1rem 1rem 1rem;
+  padding: 1rem;
+  width: 24rem;
+  height: 3rem;
+  border: none;
+  resize: none;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,143 @@
+.container
+{
+  display: flex;
+  flex-flow: row;
+  .main-content
+  {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 0 2rem;
+    width: 55rem;
+
+    .latitude-longitude
+    {
+      display: flex;
+      flex-flow: row;
+      width: 100%;
+      justify-content: space-between;
+      margin: 2rem 0;
+      color: #6B6B6B;
+
+      .latitude,
+      .longitude
+      {
+        padding: 1rem;
+        border: none;
+        background: #E5E5E5;
+        width: 23rem;
+        border-radius: 10px;
+      }
+    }
+
+    .button
+    {
+      padding: 1rem;
+      border: none;
+      background: #278BFF;
+      color: white;
+      width: 100%;
+      border-radius: 10px;
+      cursor: pointer;
+      &:hover,
+      &:active
+      {
+        background: #007cff;
+      }
+    }
+
+    .data-area
+    {
+      display: flex;
+      flex-flow: column;
+      background: #E5E5E5;
+      width: 100%;
+      margin: 2rem 0;
+      border-radius: 10px;
+
+      .data
+      {
+        height: 3rem;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        padding: 0 2rem;
+        .label
+        {
+          width: 10%;
+        }
+
+        .dash
+        {
+          width: 20%;
+          text-align: center;
+        }
+
+        .description
+        {
+          word-wrap: break-word;
+          width: 70%;
+          font-weight: bolder;
+        }
+      }
+
+      .street
+      {
+        height: 5.5rem;
+      }
+    }
+  }
+
+  .saved-history
+  {
+    display: flex;
+    flex-flow: column;
+    width: 30rem;
+    max-height: 35rem;
+    margin: 2rem 2rem 0 2rem;
+    background: #E5E5E5;
+    border-radius: 10px;
+    overflow-y: auto;
+
+    .index
+    {
+      text-align: center;
+      color: #6B6B6B;
+    }
+
+    .entry
+    {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      background: #D9D9D9;
+      margin: 1rem;
+
+      .data
+      {
+        margin: 1rem;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .lat,
+        .long
+        {
+          width: 12rem;
+        }
+      }
+
+      .note-taking
+      {
+        margin: 0 1rem 1rem 1rem;
+        padding: 1rem;
+        width: 24rem;
+        height: 3rem;
+        border: none;
+        resize: none;
+      }
+    }
+  }
+}
