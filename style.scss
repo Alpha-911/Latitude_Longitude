@@ -10,6 +10,13 @@
     margin: 0 2rem;
     width: 55rem;
 
+    @media (max-width: 380px)
+    {
+      margin: 0 1rem;
+      max-width: 20.5rem;
+      font-size: 0.8rem;
+    }
+
     .latitude-longitude
     {
       display: flex;
@@ -19,6 +26,15 @@
       margin: 2rem 0;
       color: #6B6B6B;
 
+      @media (max-width: 380px)
+      {
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 7rem;
+        order: 2;
+      }
+
       .latitude,
       .longitude
       {
@@ -27,6 +43,10 @@
         background: #E5E5E5;
         width: 23rem;
         border-radius: 10px;
+        @media (max-width: 380px)
+        {
+          width: 18.5rem;
+        }
       }
     }
 
@@ -45,6 +65,20 @@
         background: #007cff;
       }
     }
+    .search-button
+    {
+      @media (max-width: 380px)
+      {
+        order: 3;
+      }
+    }
+    .save-button
+    {
+      @media (max-width: 380px)
+      {
+        display: none;
+      }
+    }
 
     .data-area
     {
@@ -55,6 +89,12 @@
       margin: 2rem 0;
       border-radius: 10px;
 
+      @media (max-width: 380px)
+      {
+        margin-bottom: 0;
+        height: 22rem;
+      }
+
       .data
       {
         height: 3rem;
@@ -62,15 +102,28 @@
         flex-flow: row;
         align-items: center;
         padding: 0 2rem;
+        @media (max-width: 380px)
+        {
+          padding: 0 1rem;
+        }
+
         .label
         {
           width: 10%;
+          @media (max-width: 380px)
+          {
+            width: 30%;
+          }
         }
 
         .dash
         {
           width: 20%;
           text-align: center;
+          @media (max-width: 380px)
+          {
+            width: 10%
+          }
         }
 
         .description
@@ -98,6 +151,12 @@
     background: #E5E5E5;
     border-radius: 10px;
     overflow-y: auto;
+    @media (max-width: 380px)
+    {
+      display: none;
+      width: 0;
+      margin: 0;
+    }
 
     .index
     {

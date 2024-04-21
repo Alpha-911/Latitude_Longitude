@@ -9,6 +9,13 @@
   margin: 0 2rem;
   width: 55rem;
 }
+@media (max-width: 380px) {
+  .container .main-content {
+    margin: 0 1rem;
+    max-width: 20.5rem;
+    font-size: 0.8rem;
+  }
+}
 .container .main-content .latitude-longitude {
   display: flex;
   flex-flow: row;
@@ -17,6 +24,15 @@
   margin: 2rem 0;
   color: #6B6B6B;
 }
+@media (max-width: 380px) {
+  .container .main-content .latitude-longitude {
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 7rem;
+    order: 2;
+  }
+}
 .container .main-content .latitude-longitude .latitude,
 .container .main-content .latitude-longitude .longitude {
   padding: 1rem;
@@ -24,6 +40,12 @@
   background: #E5E5E5;
   width: 23rem;
   border-radius: 10px;
+}
+@media (max-width: 380px) {
+  .container .main-content .latitude-longitude .latitude,
+  .container .main-content .latitude-longitude .longitude {
+    width: 18.5rem;
+  }
 }
 .container .main-content .button {
   padding: 1rem;
@@ -37,6 +59,16 @@
 .container .main-content .button:hover, .container .main-content .button:active {
   background: #007cff;
 }
+@media (max-width: 380px) {
+  .container .main-content .search-button {
+    order: 3;
+  }
+}
+@media (max-width: 380px) {
+  .container .main-content .save-button {
+    display: none;
+  }
+}
 .container .main-content .data-area {
   display: flex;
   flex-flow: column;
@@ -45,6 +77,12 @@
   margin: 2rem 0;
   border-radius: 10px;
 }
+@media (max-width: 380px) {
+  .container .main-content .data-area {
+    margin-bottom: 0;
+    height: 22rem;
+  }
+}
 .container .main-content .data-area .data {
   height: 3rem;
   display: flex;
@@ -52,12 +90,27 @@
   align-items: center;
   padding: 0 2rem;
 }
+@media (max-width: 380px) {
+  .container .main-content .data-area .data {
+    padding: 0 1rem;
+  }
+}
 .container .main-content .data-area .data .label {
   width: 10%;
+}
+@media (max-width: 380px) {
+  .container .main-content .data-area .data .label {
+    width: 30%;
+  }
 }
 .container .main-content .data-area .data .dash {
   width: 20%;
   text-align: center;
+}
+@media (max-width: 380px) {
+  .container .main-content .data-area .data .dash {
+    width: 10%;
+  }
 }
 .container .main-content .data-area .data .description {
   word-wrap: break-word;
@@ -76,6 +129,13 @@
   background: #E5E5E5;
   border-radius: 10px;
   overflow-y: auto;
+}
+@media (max-width: 380px) {
+  .container .saved-history {
+    display: none;
+    width: 0;
+    margin: 0;
+  }
 }
 .container .saved-history .index {
   text-align: center;
