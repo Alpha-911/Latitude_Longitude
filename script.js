@@ -57,4 +57,3 @@ saveCoordinates.addEventListener('click', function () {
     counter++;
     saveCoordinate(latitude.value, longitude.value);
 })
-//24.18433 85.18282
