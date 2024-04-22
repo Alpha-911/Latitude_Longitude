@@ -14,18 +14,18 @@ const valState = document.querySelector('.des-state');
 const valTimezone = document.querySelector('.des-timezone');
 const valCountry = document.querySelector('.des-country');
 
-function dataFetch(latitude, longitude) {
-    fetch(`https://api.geoapify.com/v1/geocode/reverse?lat=${latitude}&lon=${longitude}&apiKey=b4c1a95499034a14bdeef01573da32ce`)
-        .then((response) => response.json())
-        .then(function (data) {
-            console.log(data);
-            valStreet.textContent = data.features[0].properties.address_line1;
-            valCity.textContent = data.features[0].properties.city;
-            valPostalCode.textContent = data.features[0].properties.postcode;
-            valState.textContent = data.features[0].properties.state;
-            valTimezone.textContent = data.features[0].properties.timezone.name;
-            valCountry.textContent = data.features[0].properties.country;
-        })
+const dataFetch = async function(latitude, longitude) {
+
+    const res = await fetch(`https://api.geoapify.com/v1/geocode/reverse?lat=${latitude}&lon=${longitude}&apiKey=b4c1a95499034a14bdeef01573da32ce`);
+    const data = await res.json();
+
+    console.log(data);
+    valStreet.textContent = data.features[0].properties.address_line1;
+    valCity.textContent = data.features[0].properties.city;
+    valPostalCode.textContent = data.features[0].properties.postcode;
+    valState.textContent = data.features[0].properties.state;
+    valTimezone.textContent = data.features[0].properties.timezone.name;
+    valCountry.textContent = data.features[0].properties.country;
 }
 
 function saveCoordinate(latitude, longitude) {
